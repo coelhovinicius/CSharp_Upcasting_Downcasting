@@ -25,16 +25,16 @@ namespace Aula127_UpcastingDowncasting
 
             // DOWNCASTING - Conversao da Superclasse para a Subclasse
             // BusinessAccount acc4 = (BusinessAccount)acc2; // (BusinessAccount) faz o Downcasting
-            BusinessAccount acc4 = acc2 as BusinessAccount; // Uso da palavra AS
+            BusinessAccount acc4 = acc2 as BusinessAccount; // Uso do operador AS
             acc4.Loan(100.0);
 
             // BusinessAccount acc5 = (BusinessAccount)acc3; ERRO - acc3 e tipo SavingsAccount
 
             // PALAVRAS IS / AS
-            if (acc3 is BusinessAccount) // Se acc3 for tio BusinessAccount
+            if (acc3 is BusinessAccount) // Se acc3 for tipo BusinessAccount
             {
                 // BusinessAccount acc5 = (BusinessAccount)acc3;
-                BusinessAccount acc5 = acc3 as BusinessAccount; // Faz o Downcasting - Sintaxe alternativa
+                BusinessAccount acc5 = acc3 as BusinessAccount; // Uso do operador AS
                 acc5.Loan(200.0);
                 Console.WriteLine("Loan");
             }

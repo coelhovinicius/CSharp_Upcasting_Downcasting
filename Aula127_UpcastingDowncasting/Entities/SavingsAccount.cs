@@ -9,7 +9,8 @@ namespace Aula127_UpcastingDowncasting.Entities
         {
         }
 
-        public SavingsAccount(int number, string holder, double balance, double interestRate) : base (number, holder, balance)
+        public SavingsAccount(int number, string holder, double balance, double interestRate)
+            : base (number, holder, balance)
         {
             InterestRate = interestRate;
         }
